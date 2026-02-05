@@ -70,4 +70,4 @@ nonUNESCO_sites <- nonUNESCO_sites %>%
 
 all_sites_df <- bind_rows(st_drop_geometry(UNESCO_sites), st_drop_geometry(nonUNESCO_sites))
 
-save(UNESCO_sites, nonUNESCO_sites, all_sites_df, file = "STA404_Project2_data.RData")
+save(UNESCO_sites, nonUNESCO_sites, all_sites_df, file = "unesco_heritage_data.RData")

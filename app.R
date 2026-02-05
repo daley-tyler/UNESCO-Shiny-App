@@ -1,12 +1,12 @@
 #App File
-#App Link:  https://statylerdaley.shinyapps.io/STA404_Final/
+#App Link: https://statylerdaley.shinyapps.io/UNESCO-Shiny-App/
 library(tidyverse)
 library(sf)
 library(shiny)
 library(leaflet)
 library(shinythemes)
 
-load("STA404_Project2_data.RData")
+load("unesco_heritage_data.RData")
 
 #Code for layout, tabs, and inputs
 ui <- fluidPage(
