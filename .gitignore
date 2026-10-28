@@ -1,0 +1,27 @@
+# macOS / Windows artifacts
+.DS_Store
+Thumbs.db
+
+# R and RStudio session state
+.Rhistory
+.Ruserdata
+.Rproj.user/
+*.Rcheck/
+Rplots.pdf
+
+# Default workspace autosave; keep the named application dataset
+.RData
+
+# Local-only configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Generated caches
+.cache/
+renv/library/
+renv/staging/
+
+# Keep unesco_heritage_data.RData: it is required by app.R.
