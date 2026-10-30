@@ -15,17 +15,17 @@ ui <- fluidPage(
   tabsetPanel(
     tabPanel("Read Me",
       h2("Project Overview"),
-      p("This is my Shiny application that allows users to explore and compare heritage and historic sites that are recognized by UNESCO as World Heritage Sites versus other significant sites that are not designated by UNESCO. The goal is to reveal geographic patterns and potential biases in UNESCO's selection process for these sites and to highlight important historic/heritage sites around the world, especially in regions under represented on the UNESCO list."),
+      p("I built this Shiny application to explore UNESCO World Heritage records alongside selected regional points of interest. The map and charts show patterns in the included records. These datasets have different geographic coverage and selection criteria, so their counts cannot establish designation bias or the relative heritage importance of a region."),
       h3("Data Sources"),
-      p("The UNESCO World Heritage Sites dataset comes from whc001.shp and includes site name, category, year of inscription, country, region, and area in hectares. The non-UNESCO heritage sites come from MapCruzin points-of-interest shapefiles for Africa, Asia/Middle East, Oceania, and South America, filtered to museums, archaeological sites, monuments, memorials, ruins, and attractions."),
+      p("The UNESCO World Heritage Sites dataset comes from whc001.shp and includes site name, category, year of inscription, country, region, and area in hectares. The comparison points, labelled Non-UNESCO in the interface, come from MapCruzin points-of-interest shapefiles for Africa, Asia/Middle East, Oceania, and South America, filtered to museums, archaeological sites, monuments, memorials, ruins, and attractions."),
       p("Due to the non-UNESCO data not including country or year information, comparisons by country and year focus on the UNESCO data. The app primarily works to compare counts and distributions at the regional level."),
       h3("How to Use This App"),
       tags$ul(
         tags$li(strong("Map tab:"), " Explore using an interactive world map of heritage sites. Use the sidebar to choose regions and site types, and to toggle UNESCO and non-UNESCO layers (Note: Due to the amount of points in Asia, you may have to deselect Asia when turning on the non-UNESCO layer."),
         tags$li(strong("Bar Plot tab:"), " Compare counts of sites by region or country. Use the controls to change the summary."),
         tags$li(strong("Distribution tab:"), " Explore the distributions of UNESCO site attributes such as year of or area in hectares across different regions.")),
-      h3("Key Insights"),
-      p("UNESCO World Heritage Sites are concentrated in Europe and North America, while regions such as Africa, Asia/Middle East, Oceania, and South America have many heritage sites that are not represented on the World Heritage list. This app allows you to explore that imbalance for yourself in an interactive manner."),
+      h3("Interpreting the Comparisons"),
+      p("The comparison data cover selected points in Africa, Asia/Middle East, Oceania, and South America, with no comparison points for Europe/North America. Missing coverage does not mean a region has no heritage places. The points have not been independently matched against UNESCO records, so the labels do not prove that each point lacks UNESCO designation. Use these counts to explore this snapshot, not to measure heritage importance or explain UNESCO selection decisions."),
       h3("Sources"),
       tags$ul(
         tags$li("https://data.unesco.org/explore/dataset/whc001/export/?sort=date_inscribed"),

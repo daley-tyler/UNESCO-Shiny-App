@@ -4,9 +4,9 @@
 
 An interactive data-exploration application built with **R Shiny**, **Leaflet**, **ggplot2**, and **sf**. It combines a UNESCO World Heritage dataset with selected regional points-of-interest datasets to make geographic patterns easier to inspect.
 
-**[Open the Shiny app](https://statylerdaley.shinyapps.io/UNESCO-Shiny-App/)** · [View the source code](https://github.com/daley-tyler/UNESCO-Shiny-App)
+**[Open the Shiny app](https://statylerdaley.shinyapps.io/UNESCO-Shiny-App/)** · [View the source code](https://github.com/daley-tyler/global-heritage-explorer)
 
-> The deployed URL is recorded in this repository's source/deployment configuration. Its current availability has not been independently verified.
+> The deployed app loaded on 30 October 2026. The Shiny deployment keeps its original URL independently of the GitHub repository name. It still shows the earlier interpretation text; the corrected source in this repository needs a separate deployment. This availability check does not validate every live interaction.
 
 ## Features
 
